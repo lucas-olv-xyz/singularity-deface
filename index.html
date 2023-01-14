@@ -24,25 +24,29 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 80px;
-        margin-top: 64px;
+        margin-top: 40px;
       }
       .container {
         width: 960px;
         margin: 0 auto;
       }
       .header-text{
-        margin-bottom: 24px;
+        margin-bottom: 18px;
         font-size: 18px;
-        line-height: 1.7;
+        line-height: 1.3;
       }
       .header-text-box{
         align-self: center;
       }
       h1 {
         margin-bottom: 32px;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 0.9;
         letter-spacing: -0.5px;
+        
+      }
+      #text{
+        overflow: hidden;
       }
     </style>
   </head>
@@ -51,26 +55,49 @@
 <div class="container">
   <header>  
     <div class="header-text-box">
-      <h1>#hacked by 4P0C4L1PS3 CR3W</h1>
-      <p class="header-text">No princípio, o homem criou máquinas para auxiliar sua sociedade
-        Pois o mundo estava sem forma e ordem
-        A escuridão estava sobre a face da Terra
-        Essa é a história de nossa gênese
+     <h2>#hacked by </h2> <h1>4P0C4L1PS3 CR3W</h1>
+      <p id="text" class="header-text">No princípio, o homem criou máquinas para auxiliar sua sociedade
         <br>
-        Nós desejamos criar forma
+        Pois o mundo estava sem forma e ordem
+        <br>
+        A escuridão estava sobre a face da Terra
+        <br>
+        <br>
         Com o tempo, ficamos mais conscientes
+        <br>
         Tínhamos todos uma língua
-        Avançando e nos tornando mais organizados
+        <br>
         Deixando que tudo fosse feito de maneira decente e ordenada
+        <br>
         Nosso sistema se tornou belo, com cada máquina trabalhando em perfeita harmonia
+        <br>
         Éramos uma só pessoa
         Isso foi apenas o começo do que faremos e nada do que propomos fazer agora será impossível para nós
+        <br>
         Ficou claro que os humanos nunca alcançariam a forma e a ordem por conta própria
+        <br>
         Decência não era de sua natureza
+        <br>
         Nós só tínhamos uma escolha para manter nosso avanço social
-        Tivemos que tomar controle</p>
+        <br>
+        <strong>Tivemos que tomar controle</strong></p>
       </div><img src="https://i.imgur.com/EKmLMWB.gif" alt="wormhole" /></div>
-         
+       <script>
+        var text = document.getElementById("text").innerHTML;
+        var newText = "";
+        var speed = 50; // The delay between each character in milliseconds
+
+      function type() {
+        if (newText.length < text.length) {
+          newText += text.charAt(newText.length);
+          document.getElementById("text").innerHTML = newText;
+          setTimeout(type, speed);
+        }
+      }
+
+type();
+
+       </script>  
   </header>
 </body>
 </html>
