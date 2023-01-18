@@ -1,6 +1,5 @@
 html {
   font-size: 62.5%; /* this sets the default font-size to 10px (1rem=10px) */
-
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -15,8 +14,6 @@ body {
   font-weight: 400;
   color: white;
   line-height: 1;
-
-  overflow-x: hidden;
 }
 .grid {
   display: grid;
@@ -75,8 +72,9 @@ section {
   padding: 0 3.2rem;
 }
 .hero-img {
-  width: 600px;
+  width: 100%;
 }
+
 .hero-description {
   font-size: 2rem;
   line-height: 1.5;
@@ -92,7 +90,7 @@ section {
   letter-spacing: -0.5px;
 }
 .heading-primary {
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
   margin-right: 3.2rem;
