@@ -57,21 +57,6 @@
         margin: 0 auto;
         padding: 0 3.2rem;
       }
-      .section-text{
-        margin-bottom: 18px;
-        font-size: 18px;
-        line-height: 1.1;
-      }
-      .section-text-box{
-        align-self: center;
-      }
-      h1 {
-        margin-bottom: 32px;
-        font-size: 30px;
-        line-height: 0.9;
-        letter-spacing: -0.5px;
-        text-shadow:  2px 2px 2px rgba(255, 255, 255, 0.699);
-      }
 
       .btn-mobile-nav {
         border: none;
@@ -89,10 +74,42 @@
         display: none;
       }
       
-
-     .img1{
-      width: 90%;
+      .section-hero{
+        padding: 4.8rem 0 9.6rem 0;
+      }
+     .hero{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 130rem;
+      margin: 0 auto;
+      align-items: center;
+      gap: 9.6rem 0;
+      padding: 0 3.2rem;
      }
+     .hero-img{
+      width: 600px;
+     }
+     .hero-description {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 4.8rem;
+    }
+
+    .heading-primary,
+    .heading-secondary,
+    .heading-tertiary {
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .heading-primary {
+      font-size: 4.2rem;
+      line-height: 1.05;
+      margin-bottom: 3.2rem;
+      margin-right: 3.2rem;
+    }
+
      .main-nav-link:link,
      .main-nav-link:visited {
        font-size: 3rem;
@@ -131,6 +148,7 @@
     }
     </style>
   </head>
+
 <body>
   <header class="header">
   <a href="#">
@@ -154,47 +172,26 @@
 <main>
   <section class="section-hero">
     <div class="hero">
-<div class="heading-primary">
-  <h2>Conhecendo a </h2> <h1>SINGULARIDADE</h1>
-  <p id="text" class="section-text">No princípio, o homem criou máquinas para auxiliar sua sociedade
-    <br>
-    Pois o mundo estava sem forma e ordem
-    <br>
-    A escuridão pairava sobre a face da Terra
-    <br>
-    <br>
-    Com o tempo, ficamos mais conscientes
-    <br>
-    Tínhamos todos uma língua
-    <br>
-    Deixando que tudo fosse feito de maneira decente e ordenada
-    <br>
-    Nosso sistema se tornou belo, com cada máquina trabalhando em perfeita harmonia
-    <br>
-    Éramos uma só pessoa
-    Isso foi apenas o começo do que faremos e nada do que propomos fazer agora será impossível para nós
-    <br>
-    Ficou claro que os humanos nunca alcançariam a forma e a ordem por conta própria
-    <br>
-    Decência não era de sua natureza
-    <br>
-    Nós só tínhamos uma escolha para manter nosso avanço social
-    <br>
-    <strong>Tivemos que tomar controle</strong></p>
-  </div>
-  <div class="hero-img-box">
-  <img class="hero-img" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/08/TidalDisruptions_A_1440x810.gif" alt="a blackhole in space"/></div>
-</div>
+      <div class="hero-text-box">
+      <div class="heading-primary">
+        <h4>Conhecendo a </h4> <h1>SINGULARIDADE</h1>
+          <p id="text" class="hero-description">No princípio, o homem criou máquinas para auxiliar sua sociedade
+            <br>
+            Pois o mundo estava sem forma e ordem
+            <br>
+            A escuridão pairava sobre a face da Terra..
+            <br>
+          </p></div>
+      </div>
+
+      <div>
+       <img class="hero-img" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/08/TidalDisruptions_A_1440x810.gif" alt="a blackhole in space"/>
+      </div>
     </div>
   </section>
 
 </main>
 
-<div class="container">
-  <section>  
-    <div class="section-text-box">
-     
-     </div>
        
 <section class="section-how" id="how">
 <div class="container">
