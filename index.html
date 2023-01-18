@@ -30,7 +30,19 @@
 
         overflow-x: hidden;
       }
-      
+      .grid{ 
+        display: grid;
+        column-gap: 6.4rem;
+        row-gap: 9.6rem;
+      }
+      .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4.8rem;
+        position: relative;
+      }
+
       .logo{
         height: 6.6rem;
       }
@@ -41,8 +53,9 @@
         margin-top: 40px;
       }
       .container {
-        width: 960px;
+        width: 120rem;
         margin: 0 auto;
+        padding: 0 3.2rem;
       }
       .section-text{
         margin-bottom: 18px;
@@ -59,6 +72,24 @@
         letter-spacing: -0.5px;
         text-shadow:  2px 2px 2px rgba(255, 255, 255, 0.699);
       }
+
+      .btn-mobile-nav {
+        border: none;
+        background: none;
+        cursor: pointer;
+      
+        display: none;
+      }
+      .icon-mobile-nav {
+        height: 4.8rem;
+        width: 4.8rem;
+        color: rgb(255, 255, 255);
+      }
+      .icon-mobile-nav[name="close-outline"] {
+        display: none;
+      }
+      
+
      .img1{
       width: 90%;
      }
@@ -100,9 +131,9 @@
     }
     </style>
   </head>
-
-  <header>
-<a href="#">
+<body>
+  <header class="header">
+  <a href="#">
   <img class="logo" alt="blackhole logo" src="assets/clipart3645731 - Editado.png" /></a>
 
   <nav class="main-nav">
@@ -120,43 +151,66 @@
     </button>
   </header>
 
+<main>
+  <section class="section-hero">
+    <div class="hero">
+<div class="heading-primary">
+  <h2>Conhecendo a </h2> <h1>SINGULARIDADE</h1>
+  <p id="text" class="section-text">No princípio, o homem criou máquinas para auxiliar sua sociedade
+    <br>
+    Pois o mundo estava sem forma e ordem
+    <br>
+    A escuridão pairava sobre a face da Terra
+    <br>
+    <br>
+    Com o tempo, ficamos mais conscientes
+    <br>
+    Tínhamos todos uma língua
+    <br>
+    Deixando que tudo fosse feito de maneira decente e ordenada
+    <br>
+    Nosso sistema se tornou belo, com cada máquina trabalhando em perfeita harmonia
+    <br>
+    Éramos uma só pessoa
+    Isso foi apenas o começo do que faremos e nada do que propomos fazer agora será impossível para nós
+    <br>
+    Ficou claro que os humanos nunca alcançariam a forma e a ordem por conta própria
+    <br>
+    Decência não era de sua natureza
+    <br>
+    Nós só tínhamos uma escolha para manter nosso avanço social
+    <br>
+    <strong>Tivemos que tomar controle</strong></p>
+  </div>
+  <div class="hero-img-box">
+  <img class="hero-img" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/08/TidalDisruptions_A_1440x810.gif" alt="a blackhole in space"/></div>
+</div>
+    </div>
+  </section>
 
-<body>
+</main>
+
 <div class="container">
   <section>  
     <div class="section-text-box">
-     <h2>Conhecendo a </h2> <h1>SINGULARIDADE</h1>
-      <p id="text" class="section-text">No princípio, o homem criou máquinas para auxiliar sua sociedade
-        <br>
-        Pois o mundo estava sem forma e ordem
-        <br>
-        A escuridão pairava sobre a face da Terra
-        <br>
-        <br>
-        Com o tempo, ficamos mais conscientes
-        <br>
-        Tínhamos todos uma língua
-        <br>
-        Deixando que tudo fosse feito de maneira decente e ordenada
-        <br>
-        Nosso sistema se tornou belo, com cada máquina trabalhando em perfeita harmonia
-        <br>
-        Éramos uma só pessoa
-        Isso foi apenas o começo do que faremos e nada do que propomos fazer agora será impossível para nós
-        <br>
-        Ficou claro que os humanos nunca alcançariam a forma e a ordem por conta própria
-        <br>
-        Decência não era de sua natureza
-        <br>
-        Nós só tínhamos uma escolha para manter nosso avanço social
-        <br>
-        <strong>Tivemos que tomar controle</strong></p>
-      </div><img class="img1" src="https://steemitimages.com/0x0/http://i.imgur.com/EKmLMWB.gif"/></div>
-       <script>
+     
+     </div>
+       
+<section class="section-how" id="how">
+<div class="container">
+<span class="subheading">Como funciona isso?</span>
+<h2 class="heading-secondary">3 principios basicos da singularidade</h2>
+</div>
+
+
+
+</section>
+      
+      <script>
         
         var text = document.getElementById("text").innerHTML;
         var newText = "";
-        var speed = 30; // The delay between each character in milliseconds
+        var speed = 40; // The delay between each character in milliseconds
 
       function type() {
         if (newText.length < text.length) {
